@@ -28,7 +28,7 @@ stone.onclick = function(){
 
 tonne.addEventListener('click', function() {
   convertType = 'tonne'
-  instruction.innerHTML= 'Type in number of tonne'
+  instruction.innerHTML= 'Enter number of tonne'
 });
 
 
@@ -39,20 +39,20 @@ form.onsubmit =function(event){
      
     if (number) {
         if (convertType == 'kilogram') {
-            let result = number / 6.35029318;
+            let result = number / 6.350;
             output.innerHTML = `${number} kg = ${result} st` 
         }
         else if (convertType == 'stone') {
-            let result = number * 6.35029318;
+            let result = number * 6.350;
             output.innerHTML = `${number} st = ${result} kg` 
         
         }
         else if (convertType == 'ounce'){
-            let result = number /35273.96194958 ;
+            let result = number /35273.962 ;
             output.innerHTML = `${number} oz = ${result} t`
         }
         else if(convertType == 'tonne') {
-            let result = number *35273.96194958 ;
+            let result = number *35273.962 ;
             output.innerHTML = `${number} t = ${result} oz`
         } 
     }
