@@ -39,7 +39,7 @@ form.onsubmit =function(event){
      
     if (number) {
         if (convertType == 'kilogram') {
-            let result = (number / 6.350).toFixed(2);
+            let result = number / 6.350;
             output.innerHTML = `${number} kg = ${result} st` 
         }
         else if (convertType == 'stone') {
@@ -48,7 +48,7 @@ form.onsubmit =function(event){
         
         }
         else if (convertType == 'ounce'){
-            let result = (number /35273.962).toFixed(2) ;
+            let result = number /35273.962 ;
             output.innerHTML = `${number} oz = ${result} t`
         }
         else if(convertType == 'tonne') {
