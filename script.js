@@ -48,7 +48,7 @@ form.onsubmit =function(event){
         
         }
         else if (convertType == 'ounce'){
-            let result = (number /35273.962) ;
+            let result = (number /35273.962);
             output.innerHTML = `${number} oz = ${result} t`
         }
         else if(convertType == 'tonne') {
